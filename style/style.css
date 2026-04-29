@@ -76,6 +76,18 @@ body {
     transform: translateY(-2px);
 }
 
+/* Selector de Idioma */
+.lang-selector {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#lang {
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    outline: none;
+}
 
 /* Header del Quiz */
 #header-quiz {

@@ -11,6 +11,7 @@ const texts = {
 };
 
 async function startQuiz(file) {
+    lang = document.getElementById('lang').value;
     
     try {
         const response = await fetch(file);
