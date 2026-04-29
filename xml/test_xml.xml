@@ -10,12 +10,102 @@
 ]>
 <test>
   <question id="1">
-    <wording>¿Qué significa XML?</wording>
+    <wording>¿Qué significan las siglas XML?</wording>
     <choices>
-      <choice correct="yes">Extensible Markup Language</choice>
-      <choice>Executable Multiple Language</choice>
-      <choice>Extra Modern Link</choice>
-      <choice>Examine Multiple Language</choice>
+      <choice correct="yes">eXtensible Markup Language</choice>
+      <choice>eXtra Modern Link</choice>
+      <choice>eXecutable Multiple Language</choice>
+      <choice>eXamine Multiple Language</choice>
     </choices>
   </question>
-  </test>
+
+  <question id="2">
+    <wording>¿Cuál de las siguientes afirmaciones sobre las etiquetas XML es correcta?</wording>
+    <choices>
+      <choice>No distinguen entre mayúsculas y minúsculas</choice>
+      <choice correct="yes">Deben cerrarse siempre</choice>
+      <choice>Se pueden omitir las etiquetas de cierre en elementos vacíos</choice>
+      <choice>Deben ser palabras en inglés</choice>
+    </choices>
+  </question>
+
+  <question id="3">
+    <wording>¿Cómo deben aparecer los valores de los atributos en XML?</wording>
+    <choices>
+      <choice correct="yes">Siempre entre comillas</choice>
+      <choice>Solo si contienen espacios</choice>
+      <choice>Pueden ir sin comillas si son números</choice>
+      <choice>Entre corchetes</choice>
+    </choices>
+  </question>
+
+  <question id="4">
+    <wording>¿Cuántos elementos raíz puede tener un documento XML bien formado?</wording>
+    <choices>
+      <choice>Tantos como sea necesario</choice>
+      <choice correct="yes">Exactamente uno</choice>
+      <choice>Mínimo dos</choice>
+      <choice>Cero, si solo tiene comentarios</choice>
+    </choices>
+  </question>
+
+  <question id="5">
+    <wording>¿Cuál es la función principal de un DTD en relación con XML?</wording>
+    <choices>
+      <choice>Darle estilo visual a los datos</choice>
+      <choice correct="yes">Definir la estructura y las reglas legales de un documento</choice>
+      <choice>Convertir XML a una base de datos SQL</choice>
+      <choice>Añadir seguridad y cifrado al archivo</choice>
+    </choices>
+  </question>
+
+  <question id="6">
+    <wording>¿Cómo se escribe un comentario en XML?</wording>
+    <choices>
+      <choice>// Este es un comentario</choice>
+      <choice>/* Este es un comentario */</choice>
+      <choice correct="yes">&lt;!-- Este es un comentario --&gt;</choice>
+      <choice>' Este es un comentario</choice>
+    </choices>
+  </question>
+
+  <question id="7">
+    <wording>¿Qué significa que un documento XML está "bien formado"?</wording>
+    <choices>
+      <choice>Que ha sido validado contra un DTD o Schema</choice>
+      <choice correct="yes">Que cumple con las reglas sintácticas básicas de XML</choice>
+      <choice>Que no tiene errores ortográficos</choice>
+      <choice>Que se visualiza correctamente en un navegador</choice>
+    </choices>
+  </question>
+
+  <question id="8">
+    <wording>¿Para qué se utilizan los Espacios de Nombres (Namespaces) en XML?</wording>
+    <choices>
+      <choice correct="yes">Para evitar conflictos de nombres entre elementos</choice>
+      <choice>Para acelerar la descarga del archivo</choice>
+      <choice>Para limitar el número de etiquetas permitidas</choice>
+      <choice>Para ocultar datos sensibles</choice>
+    </choices>
+  </question>
+
+  <question id="9">
+    <wording>¿Cuál es la forma correcta de declarar la versión de XML al inicio de un documento?</wording>
+    <choices>
+      <choice correct="yes">&lt;?xml version="1.0"?&gt;</choice>
+      <choice>&lt;xml version="1.0"&gt;</choice>
+      <choice>!xml version="1.0"!</choice>
+      <choice>{xml: 1.0}</choice>
+    </choices>
+  </question>
+
+  <question id="10">
+    <wording>¿Cuál es la principal diferencia entre XML y HTML?</wording>
+    <choices>
+      <choice>HTML es más rápido que XML</choice>
+      <choice correct="yes">XML transporta datos y HTML los muestra</choice>
+      <choice>XML solo puede usarse en Windows</choice>
+      <choice>HTML no permite etiquetas personalizadas</choice>
+    </choices>
+  </question>
+</test>
