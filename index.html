@@ -14,25 +14,24 @@
             <h1>Interactive Quiz</h1>
             <p>Pon a prueba tus conocimientos técnicos</p>
         </header>
-
-        <div id="setup" class="card">
-            <div class="lang-selector">
-                <label for="lang">Selecciona Idioma / Select Language:</label>
-                <select id="lang">
-                    <option value="es">Español 🇪🇸</option>
-                    <option value="en">English 🇬🇧</option>
-                </select>
-            </div>
-            
-            <div class="menu-buttons">
-                <button class="btn-primary" onclick="startQuiz('xml/test_xml.xml')">
-                    <span>Iniciación a XML</span>
-                </button>
-                <button class="btn-primary" onclick="startQuiz('xml/test_dtd.xml')">
-                    <span>Estructura DTD</span>
-                </button>
-            </div>
-        </div>
+<div id="setup" class="card">
+    <div class="lang-selector">
+        <label for="lang">Idioma / Language:</label>
+        <select id="lang">
+            <option value="es">Español 🇪🇸</option>
+            <option value="en">English 🇬🇧</option>
+        </select>
+    </div>
+    
+    <div class="menu-buttons">
+        <button class="btn-primary" onclick="startQuiz('test_xml.xml')">
+            <span>XML Test</span>
+        </button>
+        <button class="btn-primary" onclick="startQuiz('test_dtd.xml')">
+            <span>DTD Test</span>
+        </button>
+    </div>
+</div>
 
         <div id="quiz-container" class="card hidden">
             <div id="header-quiz">
