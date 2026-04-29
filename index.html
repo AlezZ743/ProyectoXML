@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz XML/DTD</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div id="setup">
+        <select id="lang">
+            <option value="es">Español</option>
+            <option value="en">English</option>
+        </select>
+        <button onclick="startQuiz('xml/test_xml.xml')">XML Test</button>
+        <button onclick="startQuiz('xml/test_dtd.xml')">DTD Test</button>
+    </div>
+
+    <div id="quiz-container" class="hidden">
+        <div id="header">
+            <span id="timer">00:00</span>
+            <span id="score-display"></span>
+        </div>
+        <div id="question-box"></div>
+        <div id="choices-box"></div>
+        <button id="next-btn" onclick="nextQuestion()" class="hidden">Siguiente</button>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE test SYSTEM "test.dtd"> <test>
+  <question id="1">
+    <wording>¿Qué define un DTD?</wording>
+    <choices>
+      <choice>El diseño visual</choice>
+      <choice correct="yes">La estructura de un documento XML</choice>
+      <choice>La conexión a base de datos</choice>
+      <choice>El estilo CSS</choice>
+    </choices>
+  </question>
+  </test>

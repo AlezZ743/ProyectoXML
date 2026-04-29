@@ -1,0 +1,7 @@
+body { font-family: sans-serif; text-align: center; padding: 20px; background: #f4f4f4; }
+#quiz-container { background: white; padding: 20px; border-radius: 8px; max-width: 600px; margin: auto; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+.hidden { display: none; }
+.choice-btn { display: block; width: 100%; margin: 10px 0; padding: 10px; cursor: pointer; border: 1px solid #ddd; border-radius: 4px; }
+.correct { background: #d4edda; }
+.incorrect { background: #f8d7da; }
+#header { display: flex; justify-content: space-between; margin-bottom: 20px; font-weight: bold; }
