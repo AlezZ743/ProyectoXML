@@ -2,27 +2,56 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Quiz XML/DTD</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Quiz: XML & DTD</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <div id="setup">
-        <select id="lang">
-            <option value="es">Español</option>
-            <option value="en">English</option>
-        </select>
-        <button onclick="startQuiz('xml/test_xml.xml')">XML Test</button>
-        <button onclick="startQuiz('xml/test_dtd.xml')">DTD Test</button>
-    </div>
 
-    <div id="quiz-container" class="hidden">
-        <div id="header">
-            <span id="timer">00:00</span>
-            <span id="score-display"></span>
+    <div class="main-wrapper">
+        <header class="main-header">
+            <h1>Interactive Quiz</h1>
+            <p>Pon a prueba tus conocimientos técnicos</p>
+        </header>
+
+        <div id="setup" class="card">
+            
+            <div class="menu-buttons">
+                <button class="btn-primary" onclick="startQuiz('xml/test_xml.xml')">
+                    <span>Iniciación a XML</span>
+                </button>
+                <button class="btn-primary" onclick="startQuiz('xml/test_dtd.xml')">
+                    <span>Estructura DTD</span>
+                </button>
+            </div>
         </div>
-        <div id="question-box"></div>
-        <div id="choices-box"></div>
-        <button id="next-btn" onclick="nextQuestion()" class="hidden">Siguiente</button>
+
+        <div id="quiz-container" class="card hidden">
+            <div id="header-quiz">
+                <div class="stat">
+                    <span class="label">Tiempo:</span>
+                    <span id="timer" class="value">00:00</span>
+                </div>
+                <div class="stat">
+                    <span id="score-display" class="value"></span>
+                </div>
+            </div>
+
+            <div class="progress-bar-container">
+                <div id="progress-bar" style="width: 0%"></div>
+            </div>
+
+            <div id="question-box">
+                </div>
+
+            <div id="choices-box">
+                </div>
+
+            <div class="footer-quiz">
+                <button id="next-btn" onclick="nextQuestion()" class="btn-next hidden">Siguiente</button>
+            </div>
+        </div>
     </div>
 
     <script src="js/script.js"></script>
