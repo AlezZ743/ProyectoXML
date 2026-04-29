@@ -10,11 +10,18 @@ const texts = {
     en: { next: "Next", score: "Score", time: "Time", finish: "Finish" }
 };
 
-async function startQuiz(file) {
-    lang = document.getElementById('lang').value;
+async function startQuiz(fileName) {
+    // 1. Detectar idioma
+    const langSelect = document.getElementById('lang');
+    lang = langSelect ? langSelect.value : 'es';
+    
+    // 2. Construir ruta dinámica: xml/es/archivo.xml o xml/en/archivo.xml
+    const filePath = `xml/${lang}/${fileName}`;
     
     try {
-        const response = await fetch(file);
+        const response = await fetch(filePath);
+        if (!response.ok) throw new Error("Archivo no encontrado");
+        
         const text = await response.text();
         const xml = new DOMParser().parseFromString(text, "text/xml");
         
@@ -23,6 +30,7 @@ async function startQuiz(file) {
         score = 0;
         seconds = 0;
         
+        // Interfaz
         document.getElementById('setup').classList.add('hidden');
         document.getElementById('quiz-container').classList.remove('hidden');
         
@@ -30,8 +38,8 @@ async function startQuiz(file) {
         startTimer();
         showQuestion();
     } catch (error) {
-        console.error("Error cargando el XML:", error);
-        alert("No se pudo cargar el test. Revisa las rutas.");
+        console.error("Error:", error);
+        alert(lang === 'es' ? "Error al cargar las preguntas" : "Error loading questions");
     }
 }
 
@@ -85,8 +93,6 @@ function checkAnswer(selectedBtn, isCorrect) {
         selectedBtn.classList.add('incorrect');
         // Mostrar cuál era la correcta
         allBtns.forEach(btn => {
-            // Aquí hay que comparar de nuevo con el XML o buscar el atributo
-            // Para simplificar, buscamos en los botones actuales
         });
     }
     

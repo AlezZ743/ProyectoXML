@@ -1,0 +1,101 @@
+<test>
+  <question id="1">
+    <wording>What does the acronym XML stand for?</wording>
+    <choices>
+      <choice correct="yes">eXtensible Markup Language</choice>
+      <choice>eXtra Modern Link</choice>
+      <choice>eXecutable Multiple Language</choice>
+      <choice>eXamine Multiple Language</choice>
+    </choices>
+  </question>
+
+  <question id="2">
+    <wording>Which of the following statements about XML tags is correct?</wording>
+    <choices>
+      <choice>They are case-insensitive</choice>
+      <choice correct="yes">They must always be closed</choice>
+      <choice>Closing tags can be omitted in empty elements</choice>
+      <choice>They must be English words</choice>
+    </choices>
+  </question>
+
+  <question id="3">
+    <wording>How must attribute values appear in XML?</wording>
+    <choices>
+      <choice correct="yes">Always in quotes</choice>
+      <choice>Only if they contain spaces</choice>
+      <choice>They can be without quotes if they are numbers</choice>
+      <choice>Inside square brackets</choice>
+    </choices>
+  </question>
+
+  <question id="4">
+    <wording>How many root elements can a well-formed XML document have?</wording>
+    <choices>
+      <choice>As many as necessary</choice>
+      <choice correct="yes">Exactly one</choice>
+      <choice>At least two</choice>
+      <choice>Zero, if it only contains comments</choice>
+    </choices>
+  </question>
+
+  <question id="5">
+    <wording>What is the primary function of a DTD in relation to XML?</wording>
+    <choices>
+      <choice>To give visual style to the data</choice>
+      <choice correct="yes">To define the structure and legal rules of a document</choice>
+      <choice>To convert XML to an SQL database</choice>
+      <choice>To add security and encryption to the file</choice>
+    </choices>
+  </question>
+
+  <question id="6">
+    <wording>How do you write a comment in XML?</wording>
+    <choices>
+      <choice>// This is a comment</choice>
+      <choice>/* This is a comment */</choice>
+      <choice correct="yes">&lt;!-- This is a comment --&gt;</choice>
+      <choice>' This is a comment</choice>
+    </choices>
+  </question>
+
+  <question id="7">
+    <wording>What does it mean for an XML document to be "well-formed"?</wording>
+    <choices>
+      <choice>It has been validated against a DTD or Schema</choice>
+      <choice correct="yes">It follows the basic syntax rules of XML</choice>
+      <choice>It has no spelling errors</choice>
+      <choice>It displays correctly in a browser</choice>
+    </choices>
+  </question>
+
+  <question id="8">
+    <wording>What are Namespaces used for in XML?</wording>
+    <choices>
+      <choice correct="yes">To avoid name conflicts between elements</choice>
+      <choice>To speed up the file download</choice>
+      <choice>To limit the number of allowed tags</choice>
+      <choice>To hide sensitive data</choice>
+    </choices>
+  </question>
+
+  <question id="9">
+    <wording>What is the correct way to declare the XML version at the start of a document?</wording>
+    <choices>
+      <choice correct="yes">&lt;?xml version="1.0"?&gt;</choice>
+      <choice>&lt;xml version="1.0"&gt;</choice>
+      <choice>!xml version="1.0"!</choice>
+      <choice>{xml: 1.0}</choice>
+    </choices>
+  </question>
+
+  <question id="10">
+    <wording>What is the main difference between XML and HTML?</wording>
+    <choices>
+      <choice>HTML is faster than XML</choice>
+      <choice correct="yes">XML transports data and HTML displays it</choice>
+      <choice>XML can only be used on Windows</choice>
+      <choice>HTML does not allow custom tags</choice>
+    </choices>
+  </question>
+</test>

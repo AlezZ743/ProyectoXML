@@ -1,0 +1,101 @@
+<test>
+  <question id="11">
+    <wording>What does PCDATA stand for in a DTD?</wording>
+    <choices>
+      <choice correct="yes">Parsed Character Data</choice>
+      <choice>Private Central Data</choice>
+      <choice>Primary Code Data</choice>
+      <choice>Plain Character Data</choice>
+    </choices>
+  </question>
+
+  <question id="12">
+    <wording>Which symbol is used in a DTD to indicate that an element must appear one or more times?</wording>
+    <choices>
+      <choice>*</choice>
+      <choice>?</choice>
+      <choice correct="yes">+</choice>
+      <choice>#</choice>
+    </choices>
+  </question>
+
+  <question id="13">
+    <wording>In an attribute declaration, what does #REQUIRED mean?</wording>
+    <choices>
+      <choice>The attribute is optional</choice>
+      <choice correct="yes">The attribute is mandatory</choice>
+      <choice>The attribute has a default value</choice>
+      <choice>The attribute must be a number</choice>
+    </choices>
+  </question>
+
+  <question id="14">
+    <wording>What is the difference between PCDATA and CDATA?</wording>
+    <choices>
+      <choice>There is no difference</choice>
+      <choice correct="yes">PCDATA is parsed by the processor; CDATA is not</choice>
+      <choice>CDATA is used for elements; PCDATA for attributes</choice>
+      <choice>PCDATA is only for numbers</choice>
+    </choices>
+  </question>
+
+  <question id="15">
+    <wording>What does the "?" symbol indicate after an element in the DTD?</wording>
+    <choices>
+      <choice>The element is mandatory</choice>
+      <choice>The element appears 1 or more times</choice>
+      <choice correct="yes">The element is optional (0 or 1 time)</choice>
+      <choice>The element is a comment</choice>
+    </choices>
+  </question>
+
+  <question id="16">
+    <wording>How is an external DTD defined in the XML document?</wording>
+    <choices>
+      <choice>&lt;!INCLUDE SYSTEM "file.dtd"&gt;</choice>
+      <choice correct="yes">&lt;!DOCTYPE root_name SYSTEM "file.dtd"&gt;</choice>
+      <choice>&lt;xml-dtd src="file.dtd"&gt;</choice>
+      <choice>&lt;link rel="dtd" href="file.dtd"&gt;</choice>
+    </choices>
+  </question>
+
+  <question id="17">
+    <wording>Which keyword is used to allow any content inside an element?</wording>
+    <choices>
+      <choice>ALL</choice>
+      <choice>OPEN</choice>
+      <choice correct="yes">ANY</choice>
+      <choice>MIXED</choice>
+    </choices>
+  </question>
+
+  <question id="18">
+    <wording>What is the #IMPLIED keyword used for in an attribute?</wording>
+    <choices>
+      <choice>Indicates the attribute is mandatory</choice>
+      <choice correct="yes">Indicates the attribute is optional with no default value</choice>
+      <choice>Indicates the value is fixed</choice>
+      <choice>Indicates the value must be a URL</choice>
+    </choices>
+  </question>
+
+  <question id="19">
+    <wording>Which symbol is used to separate options in a choice list (OR)?</wording>
+    <choices>
+      <choice>,</choice>
+      <choice>&amp;</choice>
+      <choice correct="yes">|</choice>
+      <choice>/</choice>
+    </choices>
+  </question>
+
+  <question id="20">
+    <wording>What is the main limitation of DTDs compared to XML Schema?</wording>
+    <choices>
+      <choice correct="yes">They do not support data types (like integer or date)</choice>
+      <choice>They are harder to write</choice>
+      <choice>They do not allow defining attributes</choice>
+      <choice>They are not compatible with browsers</choice>
+    </choices>
+  </question>
+</test>
